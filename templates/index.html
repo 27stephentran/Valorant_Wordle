@@ -2,8 +2,24 @@
 <html>
     <head>
         <title>Home Page</title>
+        <link rel = "stylesheet" href = "{{ url_for('static', filename ='styles.css')}}">
     </head>
     <body>
-        <h1>Home Page</h1>
+        <section class = "part_1">
+            <h1 class = "index_page">Hi! my name is Stephen Tran</h1>
+            <img src = "{{ url_for('static', filename ='capybara.png')}}" width="30px" height="30px">
+            <div class = "container">
+                <h2>About me</h2>
+                <p class = "index_page">I am a programmer, mainly developing backend, Machine Learning Model, DeepLearning Model, Data Analyze. This is a project that I make to help me expain my field.</p>
+                
+                <h2>About project</h2>
+                <p class = "index_page">This is a Wordle game using Valorant knowledge, you will have to guess the word from the hint, the word will be a common term in valorant</p>
+            
+            </div>
+            <a class = "button-link" href = "{{url_for('wordle_game')}}">Play Game</a>
+        </section>
+        <section>
+            <p class = "index_page">Footer</p>
+        </section>
     </body>
 </html>
